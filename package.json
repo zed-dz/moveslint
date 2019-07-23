@@ -1,6 +1,6 @@
 {
   "name": "moveslint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "bin/index.js",
   "scripts": {
     "start": "node bin/index.js"
