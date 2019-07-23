@@ -2,10 +2,10 @@
 const inquirer = require('inquirer')
 const { writeFileSync } = require('fs')
 const shell = require('shelljs')
-const eslintConfig = require('./config/.eslintrc.json')
+const jsonEslint = require('./config/.eslintrc.json')
 
 const esConfig = {
-  node: eslintConfig
+  node: JSON.stringify(jsonEslint, null, 2)
 }
 
 ;(async () => {
@@ -20,13 +20,8 @@ const esConfig = {
 
   const cwd = process.cwd()
 
-  writeFileSync(
-    `${cwd}/.eslintrc.json`,
-    JSON.stringify(esConfig[reactEslint], null, 2)
-  )
+  writeFileSync(`${cwd}/.eslintrc.json`, esConfig[reactEslint])
   console.log('.eslintrc.json successfully created <3 !')
-})()
-;(async () => {
   shell.exec(
     'npm i -D eslint prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node && npx install-peerdeps --dev eslint-config-airbnb && npm audit fix'
   )
