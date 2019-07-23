@@ -2,25 +2,30 @@
 const inquirer = require('inquirer')
 const { writeFileSync } = require('fs')
 const shell = require('shelljs')
-const jsonEslint = require('./config/.eslintrc.json')
 
-const esConfig = {
-  node: JSON.stringify(jsonEslint, null, 2)
+const jsonEslint = require('./config/eslint.zed.json')
+
+const configs = {
+  eslint: jsonEslint
 }
 
 ;(async () => {
-  const { reactEslint } = await inquirer.prompt([
+  const { eslintConfig } = await inquirer.prompt([
     {
       type: 'list',
-      message: 'Pick the config file you want to use',
-      name: 'react-eslint',
+      message: 'Pick the config file you want',
+      name: 'eslintConfig',
       choices: ['eslint']
     }
   ])
 
   const cwd = process.cwd()
 
-  writeFileSync(`${cwd}/.eslintrc.json`, esConfig[reactEslint])
+  writeFileSync(
+    `${cwd}/.eslintrc.json`,
+    JSON.stringify(configs[eslintConfig], null, 2)
+  )
+
   console.log('.eslintrc.json successfully created <3 !')
   shell.exec(
     'yarn add -D eslint prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node && yarn add -P eslint-config-airbnb && yarn audit'
