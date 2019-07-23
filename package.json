@@ -1,0 +1,32 @@
+{
+  "name": "moveslint",
+  "version": "1.0.0",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node bin/index.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintrc.json",
+    "eslintConfig",
+    "eslintrc"
+  ],
+  "author": "Amine Hammou",
+  "license": "MIT",
+  "bin": {
+    "eslint-config": "bin/index.js"
+  },
+  "dependencies": {
+    "inquirer": "^6.5.0",
+    "shelljs": "^0.8.3"
+  },
+  "description": "Quickly create my eslintrc.json and install some node_modules to fully work with create-react-app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zed-M/moveslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zed-M/moveslint/issues"
+  },
+  "homepage": "https://github.com/Zed-M/moveslint#readme"
+}
