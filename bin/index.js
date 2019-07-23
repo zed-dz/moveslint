@@ -23,7 +23,7 @@ const esConfig = {
   writeFileSync(`${cwd}/.eslintrc.json`, esConfig[reactEslint])
   console.log('.eslintrc.json successfully created <3 !')
   shell.exec(
-    'npm i -D eslint prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node && npx install-peerdeps --dev eslint-config-airbnb && npm audit fix'
+    'yarn add -D eslint prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node && yarn add -P eslint-config-airbnb && yarn audit'
   )
   console.log('thank you for installing eslint node modules <3!')
 })()
