@@ -28,7 +28,7 @@ const configs = {
 
   console.log('.eslintrc.json successfully created <3 !')
   shell.exec(
-    'yarn add -D eslint prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node && yarn add -P eslint-config-airbnb && yarn audit'
+    'yarn add -D prettier babel-eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-babel eslint-config-node eslint-plugin-flowtype eslint-plugin-html eslint-plugin-prettier babel-eslint eslint-plugin-react-hooks eslint-plugin-node eslint@5.3.0 eslint-plugin-import@2.18.0 eslint-plugin-jsx-a11y@6.2.3 eslint-plugin-react@7.14.2 && yarn audit'
   )
   console.log('thank you for installing eslint node modules <3!')
 })()
