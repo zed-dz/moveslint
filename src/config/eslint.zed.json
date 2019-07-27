@@ -43,7 +43,7 @@
     "no-alert": 0,
     "no-await-in-loop": 0,
     "no-return-assign": [
-      "error",
+      2,
       "except-parens"
     ],
     "no-restricted-syntax": [
@@ -52,7 +52,7 @@
       "WithStatement"
     ],
     "prefer-const": [
-      "error",
+      2,
       {
         "destructuring": "all"
       }
@@ -117,7 +117,7 @@
       }
     ],
     "prettier/prettier": [
-      "error",
+      2,
       {
         "trailingComma": "none",
         "singleQuote": true,
@@ -129,20 +129,20 @@
         "semi": false
       }
     ],
-    "no-plusplus": "off",
-    "jsx-a11y/href-no-hash": "off",
+    "no-plusplus": 0,
+    "jsx-a11y/href-no-hash": 0,
     "jsx-a11y/anchor-is-valid": [
-      "warn",
+      1,
       {
         "aspects": [
           "invalidHref"
         ]
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
     "indent": [
-      "error",
+      2,
       2,
       {
         "SwitchCase": 1,
@@ -150,7 +150,7 @@
       }
     ],
     "max-len": [
-      "error",
+      2,
       120,
       {
         "ignoreComments": true,
@@ -158,24 +158,44 @@
         "tabWidth": 2
       }
     ],
-    "ignoreSiblings": true
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "args": "after-used",
+        "argsIgnorePattern": "(^reject$|^_$|res|next|^err)",
+        "varsIgnorePattern": "(^_$)",
+        "ignoreSiblings": true
+      }
+    ],
+    "eslint-comments/disable-enable-pair": 2,
+    "eslint-comments/no-duplicate-disable": 2,
+    "eslint-comments/no-unlimited-disable": 2,
+    "eslint-comments/no-unused-disable": 2,
+    "eslint-comments/no-unused-enable": 2,
+    "optimize-regex/optimize-regex": 1,
+    "valid-jsdoc": 0, // it's wrong pretty often
+    "strict": 0,
+    "curly": 0,
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
+    "unicorn/prefer-type-error": 0,
+    "require-jsdoc": 0,
+    "no-implicit-coercion": 0,
+    "semi": [
+      2,
+      "never"
+    ],
+    "semi-style": 0,
+    "unicorn/prevent-abbreviations": 0,
+    "unicorn/filename-case": 0,
+    "no-useless-catch": 1,
+    "jsx-quotes": 0,
+    "no-negated-condition": 1,
+    "babel/no-unused-expressions": 0
   },
-  "eslint-comments/disable-enable-pair": "error",
-  "eslint-comments/no-duplicate-disable": "error",
-  "eslint-comments/no-unlimited-disable": "error",
-  "eslint-comments/no-unused-disable": "error",
-  "eslint-comments/no-unused-enable": "error",
-  "optimize-regex/optimize-regex": "warn",
-  "valid-jsdoc": "off",
-  "strict": "off",
-  "curly": "off",
-  "arrow-parens": [
-    "error",
-    "as-needed"
-  ],
-  "unicorn/prefer-type-error": "off",
-  "require-jsdoc": "off",
-  "no-implicit-coercion": "off",
   "plugins": [
     "html",
     "prettier",
