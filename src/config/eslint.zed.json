@@ -6,7 +6,17 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:node/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "kentcdodds/possible-errors",
+    "kentcdodds/best-practices",
+    "kentcdodds/es6/possible-errors",
+    "kentcdodds/import",
+    "plugin:promise/recommended",
+    "xo/esnext",
+    "plugin:unicorn/recommended",
+    "google"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -40,13 +50,6 @@
       2,
       "LabeledStatement",
       "WithStatement"
-    ],
-    "no-unused-vars": [
-      1,
-      {
-        "ignoreSiblings": true,
-        "argsIgnorePattern": "res|next|^err"
-      }
     ],
     "prefer-const": [
       "error",
@@ -83,7 +86,6 @@
     "func-names": 0,
     "space-before-function-paren": 0,
     "comma-dangle": 0,
-    "max-len": 0,
     "import/extensions": 0,
     "no-underscore-dangle": 0,
     "consistent-return": 0,
@@ -138,11 +140,51 @@
       }
     ],
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 2
+      }
+    ],
+    "max-len": [
+      "error",
+      120,
+      {
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ],
+    "ignoreSiblings": true
   },
+  "eslint-comments/disable-enable-pair": "error",
+  "eslint-comments/no-duplicate-disable": "error",
+  "eslint-comments/no-unlimited-disable": "error",
+  "eslint-comments/no-unused-disable": "error",
+  "eslint-comments/no-unused-enable": "error",
+  "optimize-regex/optimize-regex": "warn",
+  "valid-jsdoc": "off",
+  "strict": "off",
+  "curly": "off",
+  "arrow-parens": [
+    "error",
+    "as-needed"
+  ],
+  "unicorn/prefer-type-error": "off",
+  "require-jsdoc": "off",
+  "no-implicit-coercion": "off",
   "plugins": [
     "html",
     "prettier",
-    "react-hooks"
+    "react-hooks",
+    "unicorn",
+    "import",
+    "json",
+    "eslint-comments",
+    "optimize-regex",
+    "promise"
   ]
 }
