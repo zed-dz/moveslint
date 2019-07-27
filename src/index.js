@@ -1,4 +1,8 @@
+/* eslint-disable*/
+
+
 #!/usr/bin/env node
+
 const inquirer = require('inquirer')
 const { writeFileSync } = require('fs')
 const shell = require('shelljs')

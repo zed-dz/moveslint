@@ -70,6 +70,7 @@
         "props": false
       }
     ],
+    "node/no-unsupported-features/es-syntax": 0,
     "no-console": 0,
     "no-continue": 0,
     "class-methods-use-this": 0,
