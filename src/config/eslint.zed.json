@@ -9,10 +9,11 @@
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "kentcdodds/possible-errors",
-    "kentcdodds/best-practices",
+    "kentcdodds",
     "kentcdodds/es6/possible-errors",
-    "kentcdodds/import",
+    "kentcdodds/es6/best-practices",
+    "kentcdodds/es6/stylistic",
+    "kentcdodds/react",
     "plugin:promise/recommended",
     "xo/esnext",
     "plugin:unicorn/recommended",
@@ -174,7 +175,7 @@
     "eslint-comments/no-unused-disable": 2,
     "eslint-comments/no-unused-enable": 2,
     "optimize-regex/optimize-regex": 1,
-    "valid-jsdoc": 0, // it's wrong pretty often
+    "valid-jsdoc": 0,
     "strict": 0,
     "curly": 0,
     "arrow-parens": [
@@ -194,17 +195,23 @@
     "no-useless-catch": 1,
     "jsx-quotes": 0,
     "no-negated-condition": 1,
-    "babel/no-unused-expressions": 0
+    "babel/no-unused-expressions": 0,
+    "import/no-unresolved": 0,
+    "object-curly-spacing": 0
   },
   "plugins": [
     "html",
     "prettier",
     "react-hooks",
+    "react",
     "unicorn",
     "import",
     "json",
     "eslint-comments",
     "optimize-regex",
-    "promise"
+    "promise",
+    "jsx-a11y",
+    "babel",
+    "flowtype"
   ]
 }
