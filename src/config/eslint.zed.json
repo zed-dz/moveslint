@@ -3,21 +3,38 @@
     "airbnb",
     "prettier",
     "prettier/react",
+    "xo/esnext",
+    "google",
+    "kentcdodds",
+    "kentcdodds/es6/possible-errors",
+    "kentcdodds/es6/best-practices",
+    "kentcdodds/es6/stylistic",
+    "kentcdodds/react",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:node/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "kentcdodds",
-    "kentcdodds/es6/possible-errors",
-    "kentcdodds/es6/best-practices",
-    "kentcdodds/es6/stylistic",
-    "kentcdodds/react",
     "plugin:promise/recommended",
-    "xo/esnext",
     "plugin:unicorn/recommended",
-    "google"
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "html",
+    "prettier",
+    "react-hooks",
+    "react",
+    "unicorn",
+    "import",
+    "json",
+    "eslint-comments",
+    "optimize-regex",
+    "promise",
+    "jsx-a11y",
+    "babel",
+    "flowtype",
+    "@typescript-eslint"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -197,21 +214,7 @@
     "no-negated-condition": 1,
     "babel/no-unused-expressions": 0,
     "import/no-unresolved": 0,
-    "object-curly-spacing": 0
-  },
-  "plugins": [
-    "html",
-    "prettier",
-    "react-hooks",
-    "react",
-    "unicorn",
-    "import",
-    "json",
-    "eslint-comments",
-    "optimize-regex",
-    "promise",
-    "jsx-a11y",
-    "babel",
-    "flowtype"
-  ]
+    "object-curly-spacing": 0,
+    "@typescript-eslint/indent": 0
+  }
 }
