@@ -17,8 +17,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:promise/recommended",
-    "plugin:unicorn/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:unicorn/recommended"
   ],
   "plugins": [
     "html",
@@ -33,8 +32,7 @@
     "promise",
     "jsx-a11y",
     "babel",
-    "flowtype",
-    "@typescript-eslint"
+    "flowtype"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -53,7 +51,6 @@
     "node": true,
     "commonjs": true,
     "jquery": true,
-    "jest": true,
     "es6": true
   },
   "rules": {
@@ -214,7 +211,6 @@
     "no-negated-condition": 1,
     "babel/no-unused-expressions": 0,
     "import/no-unresolved": 0,
-    "object-curly-spacing": 0,
-    "@typescript-eslint/indent": 0
+    "object-curly-spacing": 0
   }
 }
